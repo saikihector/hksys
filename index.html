@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09090e" />
+  <title>HKSYS — Desenvolvimento Web | Hector Saiki</title>
+  <meta name="description" content="HKSYS — Criação de sites profissionais por Hector Saiki. Sites modernos, rápidos e responsivos para o seu negócio crescer. Jacareí, SP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <div id="dot" aria-hidden="true"></div>
+  <div id="ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Menu principal">
+    <a href="#hero" class="logo">
+      <div class="logo-dot" aria-hidden="true"></div>
+      HKSYS
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#portfolio">Portfólio</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a href="#contato" class="nav-pill">Solicitar Serviço</a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+    <a href="#sobre"     onclick="closeMenu()">Sobre</a>
+    <a href="#portfolio" onclick="closeMenu()">Portfólio</a>
+    <a href="#blog"      onclick="closeMenu()">Blog</a>
+    <a href="#contato"   onclick="closeMenu()">Contato</a>
+    <a href="#contato"   onclick="closeMenu()" class="mm-pill">Solicitar Serviço</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Apresentação">
+    <div class="dot-grid" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-glow2" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <div class="eyebrow-dot" aria-hidden="true"></div>
+        Desenvolvedor Web · Jacareí, SP
+      </div>
+      <h1>
+        <span class="h1-light">Sites que</span>
+        <span class="h1-grad">convertem.</span>
+      </h1>
+      <p class="hero-sub">
+        Criação de sites modernos, rápidos e responsivos para o seu negócio crescer no mundo digital. Da ideia ao ar — com atenção total a cada detalhe.
+      </p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">Ver Projetos</a>
+        <a href="#contato"   class="btn-ghost">Fale Comigo →</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-pulse" aria-hidden="true"></div>
+      Disponível para novos projetos
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <div class="metrics" role="region" aria-label="Estatísticas">
+    <div class="metric"><div class="metric-val">1<span>+</span></div><div class="metric-label">Projeto entregue</div></div>
+    <div class="metric"><div class="metric-val">100<span>%</span></div><div class="metric-label">No prazo</div></div>
+    <div class="metric"><div class="metric-val">24<span>h</span></div><div class="metric-label">Resposta média</div></div>
+    <div class="metric"><div class="metric-val">∞</div><div class="metric-label">Suporte pós-entrega</div></div>
+  </div>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="inner">
+      <div class="sobre-layout">
+        <div class="fade-l">
+          <div class="s-eyebrow">Sobre mim</div>
+          <h2 class="s-title">Quem está por<br/>trás da HKSYS</h2>
+          <div class="sobre-body" style="margin-top:24px;">
+            <p>Olá! Sou <strong>Hector Saiki</strong>, formado em Informática e fundador da HKSYS. Meu objetivo é criar soluções digitais que fazem diferença real para o negócio dos meus clientes.</p>
+            <p>Trabalho com desenvolvimento <strong>front-end e back-end</strong> — de landing pages simples até sistemas web completos — sempre com comunicação transparente, prazo cumprido e suporte após a entrega.</p>
+            <p>Em breve, a HKSYS vai expandir para <strong>manutenção de PCs, formatação e instalação de softwares</strong>. Tudo no mesmo lugar, com a mesma qualidade de sempre.</p>
+          </div>
+          <div class="tags-row">
+            <span class="tag">HTML5</span><span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">UI / UX</span>
+          </div>
+        </div>
+        <div class="info-cards fade">
+          <div class="info-card"><div class="card-icon" aria-hidden="true">⚡</div><div class="card-text"><strong>Sites de alta performance</strong><span>Rápidos, leves e otimizados para SEO</span></div></div>
+          <div class="info-card"><div class="card-icon" aria-hidden="true">📱</div><div class="card-text"><strong>100% responsivos</strong><span>Funciona perfeitamente em celular, tablet e desktop</span></div></div>
+          <div class="info-card"><div class="card-icon" aria-hidden="true">✅</div><div class="card-text"><strong>Prazo garantido</strong><span>Compromisso real com a data de entrega</span></div></div>
+          <div class="info-card"><div class="card-icon" aria-hidden="true">🔧</div><div class="card-text"><strong>Em breve: suporte técnico</strong><span>Manutenção de PC, formatação e softwares</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="inner">
+      <div class="fade" style="margin-bottom:48px;">
+        <div class="s-eyebrow">Portfólio</div>
+        <h2 class="s-title">Projetos em destaque</h2>
+        <p class="s-sub">Trabalhos desenvolvidos com atenção total ao resultado final.</p>
+      </div>
+      <div class="proj-grid">
+        <a class="proj-item fade" href="https://www.atelierpianovox.com" target="_blank" rel="noopener noreferrer" aria-label="Ver projeto Atelier PianoVox">
+          <span class="proj-n" aria-hidden="true">01</span>
+          <div class="proj-main">
+            <div class="proj-badges">
+              <span class="badge badge-cyan">Destaque</span>
+              <span class="badge badge-default">Site Institucional</span>
+              <span class="badge badge-default">Escola de Música</span>
+            </div>
+            <div class="proj-name">Atelier PianoVox</div>
+            <p class="proj-desc">Site completo para escola de música especializada em aulas de piano, canto e coral. Design elegante focado em apresentar os cursos e facilitar o contato com novos alunos.</p>
+          </div>
+          <span class="proj-cta" aria-hidden="true">atelierpianovox.com →</span>
+        </a>
+        <div class="proj-item coming-soon fade" aria-label="Próximo projeto, em breve">
+          <span class="proj-n" aria-hidden="true">02</span>
+          <div class="proj-main">
+            <div class="proj-badges"><span class="badge badge-default">Em breve</span></div>
+            <div class="proj-name">Próximo projeto</div>
+            <p class="proj-desc">Novos projetos chegando em breve. Quer ser o próximo? Me envie uma mensagem e vamos construir algo incrível juntos.</p>
+          </div>
+          <span class="proj-cta" aria-hidden="true">Em breve</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog">
+    <div class="inner">
+      <div class="fade" style="margin-bottom:48px;">
+        <div class="s-eyebrow">Blog</div>
+        <h2 class="s-title">Atualizações</h2>
+        <p class="s-sub">Dicas, projetos entregues e novidades da HKSYS.</p>
+      </div>
+      <div class="blog-grid">
+        <article class="post-card fade">
+          <div class="post-meta"><span class="post-cat cat-cyan">Projeto</span><span class="post-date">Fev 2026</span></div>
+          <h3>Atelier PianoVox está no ar!</h3>
+          <p>Entregamos o site da escola de música Atelier PianoVox — um projeto focado em apresentar os cursos de piano, canto e coral com elegância e facilidade de contato.</p>
+          <span class="post-link">Ler mais →</span>
+        </article>
+        <article class="post-card fade">
+          <div class="post-meta"><span class="post-cat cat-violet">Dica</span><span class="post-date">Fev 2026</span></div>
+          <h3>Por que seu negócio precisa de um site profissional?</h3>
+          <p>Um site profissional transmite credibilidade, está disponível 24h por dia e abre portas que as redes sociais não conseguem. Veja os principais motivos.</p>
+          <span class="post-link">Ler mais →</span>
+        </article>
+        <article class="post-card fade">
+          <div class="post-meta"><span class="post-cat cat-green">Novidade</span><span class="post-date">Jan 2026</span></div>
+          <h3>Em breve: manutenção de PCs e suporte técnico</h3>
+          <p>A HKSYS está crescendo! Novos serviços chegam em breve: formatação, instalação de softwares e suporte técnico presencial e remoto em Jacareí e região.</p>
+          <span class="post-link">Ler mais →</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="inner">
+      <div class="contato-layout">
+        <div class="fade-l">
+          <div class="s-eyebrow">Contato</div>
+          <div class="contato-info">
+            <h2>Vamos criar algo <em>incrível</em> juntos?</h2>
+            <p>Tem um projeto em mente? Me envie uma mensagem e retorno em até 24h com uma proposta personalizada.</p>
+          </div>
+          <a class="c-item" href="mailto:hksys.oficial@gmail.com"><span class="c-icon" aria-hidden="true">✉</span>hksys.oficial@gmail.com</a>
+          <a class="c-item" href="https://wa.me/5512982614078" target="_blank" rel="noopener noreferrer"><span class="c-icon" aria-hidden="true">📱</span>(12) 98261-4078</a>
+          <div class="c-item" style="cursor:default;"><span class="c-icon" aria-hidden="true">📍</span>Jacareí, São Paulo — BR</div>
+          <div class="c-item available" style="cursor:default;"><span class="c-icon" aria-hidden="true">●</span>Disponível para novos projetos</div>
+        </div>
+        <div class="fade">
+          <form class="form-stack" id="contactForm" onsubmit="submitForm(event)" novalidate>
+            <div class="row2">
+              <div class="f-wrap">
+                <label for="f-nome">Nome</label>
+                <input id="f-nome" type="text" name="nome" placeholder="Seu nome completo" autocomplete="name" required />
+              </div>
+              <div class="f-wrap">
+                <label for="f-wpp">WhatsApp</label>
+                <input id="f-wpp" type="tel" name="whatsapp" placeholder="(00) 00000-0000" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="f-wrap">
+              <label for="f-email">E-mail</label>
+              <input id="f-email" type="email" name="email" placeholder="seuemail@gmail.com" autocomplete="email" required />
+            </div>
+            <div class="f-wrap">
+              <label for="f-servico">Tipo de serviço</label>
+              <select id="f-servico" name="servico">
+                <option value="">Selecione o serviço...</option>
+                <option value="landing">Landing Page / Site Institucional</option>
+                <option value="ecommerce">Loja Virtual (E-commerce)</option>
+                <option value="portfolio">Portfólio Profissional</option>
+                <option value="blog">Blog / Site de Conteúdo</option>
+                <option value="sistema">Sistema Web Personalizado</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="f-wrap">
+              <label for="f-msg">Mensagem</label>
+              <textarea id="f-msg" name="mensagem" placeholder="Descreva seu projeto, prazo e orçamento esperado..."></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="sbtn">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <a href="#hero" class="f-logo">
+      <div class="logo-dot" aria-hidden="true"></div>
+      HKSYS
+    </a>
+    <p class="f-copy">© 2026 HKSYS · Hector Saiki · Jacareí, SP</p>
+    <nav class="socials" aria-label="Redes sociais">
+      <a href="https://github.com/PolarZinto" target="_blank" rel="noopener noreferrer" class="soc" title="GitHub">GH</a>
+      <a href="https://www.linkedin.com/in/hector-saiki-8a788626a" target="_blank" rel="noopener noreferrer" class="soc" title="LinkedIn">in</a>
+      <a href="https://www.instagram.com/hksys.dev" target="_blank" rel="noopener noreferrer" class="soc" title="Instagram">IG</a>
+      <a href="https://wa.me/5512982614078" target="_blank" rel="noopener noreferrer" class="soc" title="WhatsApp">WA</a>
+    </nav>
+  </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
