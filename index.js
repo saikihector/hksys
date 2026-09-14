@@ -101,17 +101,40 @@ function submitForm(e) {
   }
   btn.disabled = true;
   btn.textContent = "Enviando...";
-  // Replace setTimeout below with real fetch/formspree when deploying
-  setTimeout(() => {
-    btn.textContent = "✓ Mensagem enviada!";
-    btn.style.background = "#10b981";
-    btn.style.color = "#fff";
-    setTimeout(() => {
-      btn.textContent = "Enviar Mensagem";
-      btn.style.background = "";
-      btn.style.color = "";
-      btn.disabled = false;
-      form.reset();
-    }, 3000);
-  }, 700);
+
+  // form.action deve apontar para o seu endpoint do Formspree,
+  // ex: <form id="contactForm" action="https://formspree.io/f/XXXXXXX" method="POST">
+  fetch(form.action, {
+    method: "POST",
+    body: new FormData(form),
+    headers: { Accept: "application/json" },
+  })
+    .then((res) => {
+      if (res.ok) {
+        btn.textContent = "✓ Mensagem enviada!";
+        btn.style.background = "#10b981";
+        btn.style.color = "#fff";
+        form.reset();
+      } else {
+        return res.json().then((data) => {
+          throw new Error(
+            data?.errors?.map((e) => e.message).join(", ") ||
+              "Falha no envio"
+          );
+        });
+      }
+    })
+    .catch(() => {
+      btn.textContent = "✗ Erro ao enviar. Tente novamente.";
+      btn.style.background = "#ef4444";
+      btn.style.color = "#fff";
+    })
+    .finally(() => {
+      setTimeout(() => {
+        btn.textContent = "Enviar Mensagem";
+        btn.style.background = "";
+        btn.style.color = "";
+        btn.disabled = false;
+      }, 3000);
+    });
 }
