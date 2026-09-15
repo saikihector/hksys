@@ -28,7 +28,6 @@ Site vitrine para apresentação de projetos, capacidades do desenvolvedor, atua
 ├── index.html
 ├── index.css
 └── index.js
-
 ```
 
 ## Meu papel
